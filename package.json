@@ -3,7 +3,7 @@
   "version": "0.2.10",
   "description": "Chromium addin for monitoring Azure DevOps service health",
   "license": "MIT",
-  "author": "battery_smooth",
+  "author": "Matt Booth",
   "type": "module",
   "main": "build/background.js",
   "scripts": {
