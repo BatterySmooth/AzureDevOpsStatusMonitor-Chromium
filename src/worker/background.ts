@@ -15,7 +15,7 @@ async function checkServiceHealth() {
     const newStatus: ServiceStatus = await ServiceHealthClient.getStatus(savedOptions);
     
     // Notification
-    if (oldStatus?.status.health != newStatus?.status.health) {
+    if (oldStatus && oldStatus.status.health != newStatus?.status.health) {
       notifyUser(newStatus.status.health);
     }
   } catch (error) {
