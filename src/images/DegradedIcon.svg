@@ -1,0 +1,5 @@
+<svg aria-labelledby="__bolt-status-58-desc" class="bolt-status flex-noshrink warning" height="16" role="img" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+	<desc id="__bolt-status-58-desc">Yellow circle with a white exclamation mark inside</desc>
+	<circle cx="8" cy="8" r="8" fill="rgb(214, 127, 60)"></circle>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.91 3.9a.9.9 0 0 0-1.8 0v4.7a.9.9 0 1 0 1.8 0V3.9zm-.95 8.65a.9.9 0 1 0 0-1.8.9.9 0 0 0 0 1.8z" fill="#fff"></path>
+</svg>

@@ -1,0 +1,24 @@
+{
+  "name": "azuredevopsstatusmonitor-chromium",
+  "version": "1.0.0",
+  "description": "Chromium addin for monitoring Azure DevOps service health",
+  "license": "MIT",
+  "author": "Matt Booth",
+  "type": "module",
+  "main": "build/background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-old": "tsc",
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@types/chrome": "^0.1.28",
+    "@types/node": "^22.13.1",
+    "rollup": "^4.53.2",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.9.2"
+  }
+}

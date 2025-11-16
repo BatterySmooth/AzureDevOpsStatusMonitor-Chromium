@@ -1,0 +1,5 @@
+<svg aria-labelledby="__bolt-status-59-desc" class="bolt-status flex-noshrink failed" height="16" role="img" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+	<desc id="__bolt-status-59-desc">Red circle with a white letter x inside</desc>
+	<circle cx="8" cy="8" r="8" fill="rgb(205, 74, 69)"></circle>
+	<path d="M10.984 5.004a.9.9 0 0 1 0 1.272L9.27 7.99l1.74 1.741a.9.9 0 1 1-1.272 1.273l-1.74-1.741-1.742 1.74a.9.9 0 1 1-1.272-1.272l1.74-1.74-1.713-1.714a.9.9 0 0 1 1.273-1.273l1.713 1.713 1.714-1.713a.9.9 0 0 1 1.273 0z" fill="#fff"></path>
+</svg>

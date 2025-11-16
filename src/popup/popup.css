@@ -1,0 +1,207 @@
+:root {
+  --bg-color: rgb(50, 49, 48);
+  --black-10: rgba(0, 0, 0, 0.1);
+  --black-20: rgba(0, 0, 0, 0.2);
+  --black-40: rgba(0, 0, 0, 0.4);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --white-20: rgba(255, 255, 255, 0.2);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --font-color: whitesmoke;
+  --font-family: "Segoe UI VSS (Regular)", "Segoe UI", "-apple-system", BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Ubuntu, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: var(--font-family);
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table td:first-child,
+table th:first-child {
+  min-width: 80px;
+  padding-left: 8px;
+}
+table td:last-child,
+table th:last-child {
+  padding-right: 8px;
+}
+table td:first-child {
+  text-align: left;
+}
+th, td {
+  text-align: center;
+  padding: 8px 4px;
+  min-width: 46px;
+}
+thead th {
+  background-color: var(--black-40);
+  font-weight: normal;
+}
+tbody tr {
+  border-bottom: 1px solid var(--white-20);
+}
+tr:nth-child(even) {background-color: var(--black-20);}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+}
+.footer-row-item {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-container-sub {
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+
+.badge {
+  background-color: var(--black-40);
+  border-radius: 4px;
+
+  display: flex;
+  gap: 4px;
+  padding: 6px;
+  align-items: center;
+}
+.badge.pill {
+  border-radius: 50px;
+}
+.badge.healthy { background-color: rgba(81, 156, 93, 0.3); }
+.badge.degraded { background-color: rgba(207, 122, 58, 0.3); }
+.badge.unhealthy { background-color: rgba(205, 74, 69, 0.3); }
+.badge.advisory { background-color: rgba(0, 120, 212, 0.3); }
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  width: 26px;
+  height: 26px;
+}
+.icon-btn img {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+}
+.icon-btn:hover {
+  background-color: var(--white-20);
+  border-radius: 4px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: var(--black-40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  max-width: 300px;
+  max-height: 80%;
+  background: var(--bg-color);
+  border-radius: 4px;
+}
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 120, 212);
+  padding: 4px;
+}
+.dialog-header h3 {
+  margin: 0 0 0 4px;
+}
+.dialog-body {
+  overflow-y: auto;
+  flex: 1;
+}
+.list-headers {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0px;
+  background: var(--bg-color);
+  z-index: 1;  
+  padding: 8px 8px 0px 8px;
+  box-shadow: 0 0 10px var(--black-40);
+}
+.list-headers h4 {
+  margin-left: 20px;
+  margin-bottom: 4px;
+  max-width: 50%;
+  width: 50%;
+}
+.list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  box-sizing: border-box;
+  margin: 8px;
+}
+.checkbox-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 50%;
+  width: 50%;
+}
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  border-radius: 4px;
+  transition: background-color 0.1s ease;
+
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+label:hover {
+  background-color: var(--black-20);
+}
+label > input {
+  accent-color: #007bff;
+}

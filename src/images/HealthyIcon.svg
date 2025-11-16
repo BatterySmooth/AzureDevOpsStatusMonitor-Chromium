@@ -1,0 +1,5 @@
+﻿<svg aria-labelledby="__bolt-status-57-desc" class="bolt-status flex-noshrink success" height="16" role="img" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+	<desc id="__bolt-status-57-desc">Green circle with a white check mark inside</desc>
+	<circle cx="8" cy="8" r="8" fill="rgb(85, 163, 98)"></circle>
+	<path d="M6.062 11.144l-.003-.002-1.784-1.785A.937.937 0 1 1 5.6 8.031l1.125 1.124 3.88-3.88A.937.937 0 1 1 11.931 6.6l-4.54 4.54-.004.004a.938.938 0 0 1-1.325 0z" fill="#fff"></path>
+</svg>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <title>Azure DevOps Service Health</title>
+</head>
+
+<body>
+  <div class="header"></div>
+  <div id="status-container" class="table-container"></div>
+  <div class="footer-row">
+    <div class="footer-row-item"></div>
+    <div class="footer-row-item">
+      <span class="badge pill healthy"><img width="16" height="16" src="../images/HealthyIcon.svg" alt="Healthy" />Healthy</span>
+      <span class="badge pill degraded"><img width="16" height="16" src="../images/DegradedIcon.svg" alt="Degraded" />Degraded</span>
+      <span class="badge pill unhealthy"><img width="16" height="16" src="../images/UnhealthyIcon.svg" alt="Unhealthy" />Unhealthy</span>
+      <span class="badge pill advisory"><img width="16" height="16" src="../images/AdvisoryIcon.svg" alt="Advisory" />Advisory</span>
+    </div>
+    <div class="footer-row-item"></div>
+  </div>
+  <div class="footer-row">
+    <div id="refresh-container" class="footer-row-item">
+      <span id="refresh-badge" class="badge" title="Last update on 15/11/2025, 13:17:56">
+        <img width="16" height="16" src="../images/WaitingIcon.svg">
+        Waiting...
+      </span>
+    </div>
+    <div class="footer-row-item">
+      <button id="settings-button" class="icon-btn" type="button">
+        <img src="../images/Settings_16.svg" width="16" height="16" alt="Settings">
+      </button>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay hidden">
+    <div class="dialog">
+      <div class="dialog-header">
+        <h3>Settings</h3>
+        <button id="closeOverlayBtn" class="icon-btn" type="button">
+          <img src="../images/Dismiss_16.svg" width="16" height="16" alt="Settings">
+        </button>
+      </div>
+      <div class="dialog-body">
+        <div class="list-headers">
+          <h4>Geographies</h4>
+          <h4>Services</h4>
+        </div>
+        <div class="list-container">
+          <div class="checkbox-list-container">
+            <div id="geo-list" class="checkbox-list"></div>
+          </div>
+          <div class="checkbox-list-container">
+            <div id="service-list" class="checkbox-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
+
+
+
