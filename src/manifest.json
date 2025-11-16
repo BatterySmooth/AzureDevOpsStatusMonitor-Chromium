@@ -2,7 +2,7 @@
     "name": "Azure DevOps Status Monitor",
     "version": "0.2.10",
     "manifest_version": 3,
-    "description": "Azure DevOps service health monitor.",
+    "description": "Chromium addin for monitoring Azure DevOps service health",
     "permissions": [
         "alarms",
         "storage",
