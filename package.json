@@ -1,7 +1,7 @@
 {
   "name": "azuredevopsstatusmonitor-chromium",
   "version": "0.2.10",
-  "description": "Chromium addin for monitoring Azure DevOps service health",
+  "description": "Chromium extension for monitoring Azure DevOps service health",
   "license": "MIT",
   "author": "Matt Booth",
   "type": "module",
