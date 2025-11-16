@@ -1,0 +1,29 @@
+# Node dependencies
+node_modules/
+# Build output
+dist/
+build/
+# TypeScript cache
+*.tsbuildinfo
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# OS-specific files
+.DS_Store
+Thumbs.db
+# Environment variables
+.env
+.env.local
+.env.*.local
+# Chrome extension packaging
+*.crx
+*.pem
+*.zip
+# IDE settings
+.vscode/
+.idea/
+# Coverage reports
+coverage/
+# Temporary files
+*.tmp
